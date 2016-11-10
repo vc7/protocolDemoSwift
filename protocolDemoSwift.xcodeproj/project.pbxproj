@@ -55,6 +55,7 @@
 		BFA577111DD4B35A00119D68 /* TokenManageable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenManageable.swift; sourceTree = "<group>"; };
 		BFA577141DD4B46800119D68 /* AppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 		BFA577171DD4B60400119D68 /* AccessTokenManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessTokenManager.swift; sourceTree = "<group>"; };
+		BFA5771A1DD4B70C00119D68 /* protocolDemoSwift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = protocolDemoSwift.entitlements; sourceTree = "<group>"; };
 		E3BC20D5C473C7DD5AEC8B29 /* Pods-protocolDemoSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-protocolDemoSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-protocolDemoSwift/Pods-protocolDemoSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,6 +129,7 @@
 				BFA576F41DD4AF8400119D68 /* Assets.xcassets */,
 				BFA576F61DD4AF8400119D68 /* LaunchScreen.storyboard */,
 				BFA576F91DD4AF8400119D68 /* Info.plist */,
+				BFA5771A1DD4B70C00119D68 /* protocolDemoSwift.entitlements */,
 			);
 			path = protocolDemoSwift;
 			sourceTree = "<group>";
@@ -210,6 +212,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = ZAA88TS93T;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					BFA576FD1DD4AF8400119D68 = {
 						CreatedOnToolsVersion = 8.1;
@@ -503,6 +510,7 @@
 			baseConfigurationReference = E3BC20D5C473C7DD5AEC8B29 /* Pods-protocolDemoSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = protocolDemoSwift/protocolDemoSwift.entitlements;
 				DEVELOPMENT_TEAM = ZAA88TS93T;
 				INFOPLIST_FILE = protocolDemoSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -517,6 +525,7 @@
 			baseConfigurationReference = 35960413D08E2A1E1A9D5787 /* Pods-protocolDemoSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = protocolDemoSwift/protocolDemoSwift.entitlements;
 				DEVELOPMENT_TEAM = ZAA88TS93T;
 				INFOPLIST_FILE = protocolDemoSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -6,6 +6,8 @@ target 'protocolDemoSwift' do
   use_frameworks!
 
   # Pods for protocolDemoSwift
+	
+	pod 'KeychainAccess', '~>3.0.1'
 
   target 'protocolDemoSwiftTests' do
     inherit! :search_paths

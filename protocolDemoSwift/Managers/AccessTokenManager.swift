@@ -7,15 +7,24 @@
 //
 
 import Foundation
+import KeychainAccess
 
 class AccessTokenManager: TokenManageable {
+    
+    /// 負責和 Keychain 溝通的 KeychainAccess 的 instance
+    internal let keychain: Keychain = Keychain()
+    /// 存在 Keychain 裡的 key name
+    internal let key: String = "accessToken"
+    
     var token: String? {
-        return nil
+        return self.keychain[key]
     }
     
     func update(token: String) {
+        self.keychain[key] = token
     }
     
     func reset() {
+        self.keychain[key] = nil
     }
 }
