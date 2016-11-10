@@ -13,7 +13,6 @@
 		BFA576F31DD4AF8400119D68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA576F11DD4AF8400119D68 /* Main.storyboard */; };
 		BFA576F51DD4AF8400119D68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFA576F41DD4AF8400119D68 /* Assets.xcassets */; };
 		BFA576F81DD4AF8400119D68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA576F61DD4AF8400119D68 /* LaunchScreen.storyboard */; };
-		BFA577031DD4AF8400119D68 /* protocolDemoSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA577021DD4AF8400119D68 /* protocolDemoSwiftTests.swift */; };
 		BFA5770F1DD4B27E00119D68 /* AppManageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA5770E1DD4B27E00119D68 /* AppManageable.swift */; };
 		BFA577101DD4B27E00119D68 /* AppManageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA5770E1DD4B27E00119D68 /* AppManageable.swift */; };
 		BFA577121DD4B35B00119D68 /* TokenManageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA577111DD4B35A00119D68 /* TokenManageable.swift */; };
@@ -22,6 +21,7 @@
 		BFA577161DD4B46800119D68 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA577141DD4B46800119D68 /* AppManager.swift */; };
 		BFA577181DD4B60400119D68 /* AccessTokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA577171DD4B60400119D68 /* AccessTokenManager.swift */; };
 		BFA577191DD4B60400119D68 /* AccessTokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA577171DD4B60400119D68 /* AccessTokenManager.swift */; };
+		BFA5771C1DD4B88600119D68 /* AppManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA5771B1DD4B88600119D68 /* AppManagerTests.swift */; };
 		FBF5C1088D74B14CA3F1418E /* Pods_protocolDemoSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688939E3916318FEE7D3FD8C /* Pods_protocolDemoSwiftTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,13 +49,13 @@
 		BFA576F71DD4AF8400119D68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFA576F91DD4AF8400119D68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFA576FE1DD4AF8400119D68 /* protocolDemoSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = protocolDemoSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BFA577021DD4AF8400119D68 /* protocolDemoSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocolDemoSwiftTests.swift; sourceTree = "<group>"; };
 		BFA577041DD4AF8400119D68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFA5770E1DD4B27E00119D68 /* AppManageable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppManageable.swift; sourceTree = "<group>"; };
 		BFA577111DD4B35A00119D68 /* TokenManageable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenManageable.swift; sourceTree = "<group>"; };
 		BFA577141DD4B46800119D68 /* AppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 		BFA577171DD4B60400119D68 /* AccessTokenManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessTokenManager.swift; sourceTree = "<group>"; };
 		BFA5771A1DD4B70C00119D68 /* protocolDemoSwift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = protocolDemoSwift.entitlements; sourceTree = "<group>"; };
+		BFA5771B1DD4B88600119D68 /* AppManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppManagerTests.swift; sourceTree = "<group>"; };
 		E3BC20D5C473C7DD5AEC8B29 /* Pods-protocolDemoSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-protocolDemoSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-protocolDemoSwift/Pods-protocolDemoSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,7 +137,7 @@
 		BFA577011DD4AF8400119D68 /* protocolDemoSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				BFA577021DD4AF8400119D68 /* protocolDemoSwiftTests.swift */,
+				BFA5771D1DD4B88F00119D68 /* Managers */,
 				BFA577041DD4AF8400119D68 /* Info.plist */,
 			);
 			path = protocolDemoSwiftTests;
@@ -150,6 +150,14 @@
 				BFA577141DD4B46800119D68 /* AppManager.swift */,
 				BFA577111DD4B35A00119D68 /* TokenManageable.swift */,
 				BFA577171DD4B60400119D68 /* AccessTokenManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		BFA5771D1DD4B88F00119D68 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				BFA5771B1DD4B88600119D68 /* AppManagerTests.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -376,8 +384,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFA5771C1DD4B88600119D68 /* AppManagerTests.swift in Sources */,
 				BFA577101DD4B27E00119D68 /* AppManageable.swift in Sources */,
-				BFA577031DD4AF8400119D68 /* protocolDemoSwiftTests.swift in Sources */,
 				BFA577191DD4B60400119D68 /* AccessTokenManager.swift in Sources */,
 				BFA577131DD4B35B00119D68 /* TokenManageable.swift in Sources */,
 				BFA577161DD4B46800119D68 /* AppManager.swift in Sources */,
