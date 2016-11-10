@@ -16,6 +16,8 @@
 		BFA577031DD4AF8400119D68 /* protocolDemoSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA577021DD4AF8400119D68 /* protocolDemoSwiftTests.swift */; };
 		BFA5770F1DD4B27E00119D68 /* AppManageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA5770E1DD4B27E00119D68 /* AppManageable.swift */; };
 		BFA577101DD4B27E00119D68 /* AppManageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA5770E1DD4B27E00119D68 /* AppManageable.swift */; };
+		BFA577121DD4B35B00119D68 /* TokenManageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA577111DD4B35A00119D68 /* TokenManageable.swift */; };
+		BFA577131DD4B35B00119D68 /* TokenManageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA577111DD4B35A00119D68 /* TokenManageable.swift */; };
 		FBF5C1088D74B14CA3F1418E /* Pods_protocolDemoSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688939E3916318FEE7D3FD8C /* Pods_protocolDemoSwiftTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +48,7 @@
 		BFA577021DD4AF8400119D68 /* protocolDemoSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocolDemoSwiftTests.swift; sourceTree = "<group>"; };
 		BFA577041DD4AF8400119D68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFA5770E1DD4B27E00119D68 /* AppManageable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppManageable.swift; sourceTree = "<group>"; };
+		BFA577111DD4B35A00119D68 /* TokenManageable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenManageable.swift; sourceTree = "<group>"; };
 		E3BC20D5C473C7DD5AEC8B29 /* Pods-protocolDemoSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-protocolDemoSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-protocolDemoSwift/Pods-protocolDemoSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				BFA5770E1DD4B27E00119D68 /* AppManageable.swift */,
+				BFA577111DD4B35A00119D68 /* TokenManageable.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -346,6 +350,7 @@
 			files = (
 				BFA576F01DD4AF8400119D68 /* ViewController.swift in Sources */,
 				BFA576EE1DD4AF8400119D68 /* AppDelegate.swift in Sources */,
+				BFA577121DD4B35B00119D68 /* TokenManageable.swift in Sources */,
 				BFA5770F1DD4B27E00119D68 /* AppManageable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +361,7 @@
 			files = (
 				BFA577101DD4B27E00119D68 /* AppManageable.swift in Sources */,
 				BFA577031DD4AF8400119D68 /* protocolDemoSwiftTests.swift in Sources */,
+				BFA577131DD4B35B00119D68 /* TokenManageable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
