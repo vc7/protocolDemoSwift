@@ -18,9 +18,9 @@ class AppManager: AppManageable {
     static let `default` = AppManager()
     
     var isLoggedIn: Bool {
-        return self.accessTokenManager?.token != nil
+        return self.accessTokenManager.token != nil
     }
     
     /// 管理 acceess token 的 manager
-    var accessTokenManager: TokenManageable?
+    var accessTokenManager: TokenManageable = AccessTokenManager.default
 }

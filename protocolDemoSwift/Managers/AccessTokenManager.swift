@@ -11,6 +11,12 @@ import KeychainAccess
 
 class AccessTokenManager: TokenManageable {
     
+    private init() {
+    }
+    
+    /// AccessTokenManager 的 singleton instance
+    static let `default` = AccessTokenManager()
+    
     /// 負責和 Keychain 溝通的 KeychainAccess 的 instance
     internal let keychain: Keychain = Keychain()
     /// 存在 Keychain 裡的 key name
