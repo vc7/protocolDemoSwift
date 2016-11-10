@@ -28,12 +28,32 @@ class AppManagerTests: XCTestCase {
         
         XCTAssertTrue(appManager.isLoggedIn)
     }
+    
+    func testAccessTokenNotExistIsLoggedInWillBeFalse() {
+        let appManager = AppManager.default
+        appManager.accessTokenManager = MockAccessTokenNotExistTokenManager()
+        
+        XCTAssertFalse(appManager.isLoggedIn)
+    }
 }
 
 /// 模擬 token 存在的測試替身。 update 和 reset 因為不在被測範圍，所以沒有實作功能
 private class MockAccessTokenExistTokenManager: TokenManageable {
     var token: String? {
         return "some-token"
+    }
+    
+    func update(token: String) {
+    }
+    
+    func reset() {
+    }
+}
+
+/// 模擬 token 不存在的測試替身。 update 和 reset 因為不在被測範圍，所以沒有實作功能
+private class MockAccessTokenNotExistTokenManager: TokenManageable {
+    var token: String? {
+        return nil
     }
     
     func update(token: String) {
