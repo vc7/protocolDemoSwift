@@ -60,9 +60,13 @@ Commit - [3e7a8dc](https://github.com/vc7/protocolDemoSwift/commit/3e7a8dc99f166
 
 Commit - [bc62185](https://github.com/vc7/protocolDemoSwift/commit/bc6218513df8b666b100f73822f5716c2a325d34)
 
+- 加上 MockAccessTokenExistTokenManager 作為 accessTokenManager 的測試替身
+
 ### 加上測試：當 access token 不存在時，AppManager 的 isLoggedIn 應為 false 
 
 Commit - [ce8e750](https://github.com/vc7/protocolDemoSwift/commit/ce8e75057240829482f0ddc599646b6dd95d4172)
+
+- 加上 MockAccessTokenNotExistTokenManager 作為 accessTokenManager 的測試替身
 
 ## 補充資訊
 
